@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@300;400;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@300;400;600;900&display=swap');
 
 /*Color Palette: RGB
 38, 70, 83 Charcoal
@@ -19,14 +19,45 @@ body {
 
 a {
     text-decoration: none;
+    color: rgba(233, 196, 106, 1);
+}
+
+section {
+    padding: 2rem;
+}
+
+h2 {
+    padding-bottom: 2rem;
+    font-weight: 900;
+    font-size: 2rem;
+}
+
+h3 {
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+
+h4 {
+    font-size: 1.25rem;
 }
 
 /*Header*/
 header {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
     background-color: rgb(38, 70, 83);
+    padding: 2rem;
+}
+
+header h2 {
+    font-weight: 900;
+    font-size: 2rem;
+    padding-bottom: 0;
+}
+
+nav {
+    width: 45%;
 }
 
 nav ul {
@@ -34,15 +65,19 @@ nav ul {
     justify-content: space-evenly;
 }
 
+nav li {
+    padding: 0 1rem;
+}
 /*Make Friends*/
 
 #make-friends #image-container {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    margin-bottom: 2rem;
 }
 
 #image-container img {
-    width: 30%;
+    width: 32%;
 }
 
 @media only screen and (max-width: 700px){
@@ -51,22 +86,69 @@ nav ul {
     }
 
     #image-container img {
-        width: 100%
+        width: 100%;
+        margin: 1rem 0;
     }
 }
 
- /*Merch*/
+/*Events Sub-section*/
+#events {
+    margin: 1rem 0;
+}
+
+#events .event {
+    margin: 1rem 0;
+    padding: 1rem;
+}
+
+#events .event:nth-child(odd) {
+    background-color: rgba(244, 162, 97, 1);
+}
+
+#events .event:nth-child(even) {
+    background-color: rgba(231, 111, 81, 1);
+}
+
+#events .event h4 {
+    margin-bottom: 1rem;
+}
+/*Schedule Sub-section*/
+#schedule {
+    margin: 2rem 0;
+}
+
+/*Networking Section*/
+/*Job-board Sub-section*/
+#job-board {
+    margin: 2rem 0;
+}
+
+#job-board h3 {
+    margin-bottom: 1rem;
+}
+
+/*Merch*/
  .merch-items {
     display: flex;
+    justify-content: space-between;
+    margin: 2rem 0;
  }
 
  .merch-item {
     display: flex;
     flex-direction: column;
+    background-color: rgba(42, 157, 143,1);
+    width: 30%;
+    padding: 1rem;
  }
 
  .merch-item img {
     width: 100%;
+    margin-bottom: 1rem;
+ }
+
+ .merch-item h4 {
+     margin-bottom: 1rem;
  }
 
  @media only screen and (max-width: 700px){
@@ -77,9 +159,35 @@ nav ul {
      .merch-item {
         display: flex;
         flex-direction: column;
+        width: 100%;
+        margin: 1rem 0;
      }
     
      .merch-item img {
         width: 100%;
      }
+}
+
+/*Location Section*/
+/*Covid-policy Sub-section*/
+#covid-policy {
+    margin: 2rem 0;
+}
+
+#covid-policy h3 {
+    margin-bottom: 1rem;
+}
+
+/*Contact Section*/
+
+#contact-info {
+    text-align: center;
+    background-color: rgba(244, 162, 97, 1);
+}
+
+/*Footer*/
+
+footer {
+    text-align: center;
+    margin: 1rem 0;
 }
